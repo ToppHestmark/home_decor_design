@@ -1,0 +1,26 @@
+@use '../abstracts' as *;
+
+.logo-container {
+  position: absolute;
+  margin: 1em 5em;
+
+  img {
+    width: 7rem;
+  }
+
+  @media screen and (min-width: $screen-md) {
+    &.center {
+      display: none;
+    }
+  }
+
+  @media screen and (max-width: $screen-md) {
+    img {
+      width: 5rem;
+    }
+
+    &.navbar {
+      display: none;
+    }
+  }
+}

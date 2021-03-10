@@ -10,21 +10,19 @@ $screen-md: 768px;
 $screen-lg: 992px;
 
 body {
-  font-family: basic-sans, sans-serif;
+  width: 100%;
   min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  font-size: 1.125em;
-  line-height: 1.6;
   background: var(--clr-light);
   overflow-x: hidden;
   background-image: linear-gradient(
-      135deg,
+      244deg,
       rgba(186, 186, 186, 0.03) 0%,
       rgba(186, 186, 186, 0.03) 10%,
-      rgba(133, 133, 133, 0.09) 10%,
-      rgba(133, 133, 133, 0.09) 14%,
+      rgba(133, 133, 133, 0.03) 10%,
+      rgba(133, 133, 133, 0.03) 14%,
       rgba(38, 38, 38, 0.03) 14%,
       rgba(38, 38, 38, 0.03) 17%,
       rgba(93, 93, 93, 0.03) 17%,
@@ -35,7 +33,7 @@ body {
       rgba(239, 239, 239, 0.03) 100%
     ),
     linear-gradient(
-      135deg,
+      244deg,
       rgba(236, 236, 236, 0.03) 0%,
       rgba(236, 236, 236, 0.03) 47%,
       rgba(182, 182, 182, 0.03) 47%,
@@ -50,19 +48,28 @@ body {
       rgba(226, 226, 226, 0.03) 100%
     ),
     linear-gradient(
-      45deg,
+      154deg,
       rgba(52, 52, 52, 0.03) 0%,
       rgba(52, 52, 52, 0.03) 31%,
       rgba(246, 246, 246, 0.03) 31%,
       rgba(246, 246, 246, 0.03) 63%,
       rgba(188, 188, 188, 0.03) 63%,
       rgba(188, 188, 188, 0.03) 71%,
-      rgba(15, 15, 15, 0.04) 71%,
-      rgba(15, 15, 15, 0.04) 87%,
+      rgba(15, 15, 15, 0.03) 71%,
+      rgba(15, 15, 15, 0.03) 87%,
       rgba(127, 127, 127, 0.03) 87%,
       rgba(127, 127, 127, 0.03) 93%,
       rgba(234, 234, 234, 0.03) 93%,
       rgba(234, 234, 234, 0.03) 100%
     ),
-    linear-gradient(90deg, #ffffff, #ffffff);
+    linear-gradient(199deg, #ffffff, #ffffff);
+}
+
+main {
+  width: 100%;
+  max-width: 1600px;
+}
+
+section {
+  width: 100%;
 }

@@ -1,0 +1,32 @@
+@use '../abstracts/' as *;
+
+.footer {
+  @include flex-col-center;
+  min-height: 30vh;
+  background: var(--clr-light);
+  padding: 3em 0.5em;
+  text-align: center;
+
+  &__logo-container {
+    margin: 1em 0;
+
+    img {
+      width: 7rem;
+    }
+  }
+
+  &__link-container {
+    margin: 2em 0;
+
+    a {
+      text-decoration: none;
+      margin: 1.5em;
+      line-height: 2;
+      color: var(--clr-dark-700);
+    }
+
+    a:hover {
+      color: var(--clr-secondary);
+    }
+  }
+}

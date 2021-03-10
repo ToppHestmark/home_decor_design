@@ -1,0 +1,12 @@
+section.hero {
+  min-height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.home__hero {
+  background-image: url("/assets/background/home-hero.jpg");
+  // Photo by Bench Accounting on Unsplash - URL: https://unsplash.com/photos/nvzvOPQW0gc
+  background-position: center bottom;
+}
