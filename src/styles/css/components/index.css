@@ -401,6 +401,9 @@ section.hero {
   color: var(--clr-dark-700);
 }
 .footer__link-container a:hover {
+  color: var(--clr-primary);
+}
+.footer__link-container a:active {
   color: var(--clr-secondary);
 }
 
