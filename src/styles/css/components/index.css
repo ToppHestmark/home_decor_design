@@ -289,7 +289,7 @@ section.hero {
 }
 
 .home__hero {
-  background-image: url("/assets/background/home-hero.jpg");
+  background-image: url("../../../../assets/background/home-hero.jpg");
   background-position: center bottom;
 }
 
