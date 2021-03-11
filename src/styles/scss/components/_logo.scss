@@ -5,7 +5,7 @@
   margin: 1em 5em;
 
   img {
-    width: 7rem;
+    width: 5.5rem;
   }
 
   @media screen and (min-width: $screen-md) {
@@ -16,7 +16,7 @@
 
   @media screen and (max-width: $screen-md) {
     img {
-      width: 5rem;
+      width: 4rem;
     }
 
     &.navbar {
