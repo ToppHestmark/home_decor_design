@@ -1,7 +1,11 @@
 # Home Decor website
 
-- [ ] Bottom border at fore-text
-- [ ] Border around images
-- [ ] Look for new pattern with ligther background
-- [ ] Call to action button
+- [x] Bottom border at fore-text
+- [x] Smooth scroll / scroll to top
+- [x] No scroll when open navbar
+- [x] Subscribe button
+- [x] Call to action button
+- [x] New pattern with ligther background
 - [ ] Portfolio page with several images.
+- [ ] Contact page
+- [ ] Image slider

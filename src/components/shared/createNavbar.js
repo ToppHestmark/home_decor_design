@@ -1,4 +1,5 @@
 const createNavbar = () => {
+  const body = document.querySelector("body");
   const navContainer = document.querySelector(".nav");
   const pathName = location.pathname;
   const homeActive = pathName === "/index.html" ? "active" : "";
@@ -29,6 +30,7 @@ const createNavbar = () => {
   const navToggle = document.querySelector(".nav__toggle");
   navToggle.onclick = () => {
     document.body.classList.toggle("nav--open");
+    body.classList.toggle("body--preventScrolling");
   };
 };
 

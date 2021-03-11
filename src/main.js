@@ -1,4 +1,5 @@
-import { createNavbar, createFooter } from "./components/index.js";
+import { createNavbar, createFooter, scrollToTop } from "./components/index.js";
 
 createNavbar();
 createFooter();
+scrollToTop();
