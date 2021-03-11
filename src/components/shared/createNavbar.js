@@ -1,8 +1,10 @@
 const createNavbar = () => {
   const body = document.querySelector("body");
   const navContainer = document.querySelector(".nav");
+
   const pathName = location.pathname;
   const homeActive = pathName === "/index.html" ? "active" : "";
+  const portfolioActive = pathName === "/portfolio.html" ? "active" : "";
 
   navContainer.innerHTML = `
     <button class="nav__toggle">
@@ -15,8 +17,8 @@ const createNavbar = () => {
       <li class="nav__item ${homeActive}">
         <a href="./index.html" class="nav__link">Home</a>
       </li>
-      <li class="nav__item">
-        <a href="#" class="nav__link">Portfolio</a>
+      <li class="nav__item ${portfolioActive}">
+        <a href="./portfolio.html" class="nav__link">Portfolio</a>
       </li>
       <li class="nav__item">
         <a href="#" class="nav__link">About</a>

@@ -2,6 +2,8 @@
 
 .footer {
   @include flex-col-center;
+
+  width: 100%;
   min-height: 30vh;
   background: var(--clr-light);
   padding: 3em 0.5em;

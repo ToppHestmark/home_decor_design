@@ -16,3 +16,18 @@
   -moz-box-shadow: 0px 6px 23px 0px rgba(197, 194, 194, 0.75);
   box-shadow: 0px 6px 23px 0px rgba(197, 194, 194, 0.75);
 }
+
+@mixin image-hover {
+  img {
+    -webkit-filter: grayscale(40%) blur(0.4px);
+    filter: grayscale(40%) blur(0.4px);
+    transition: 350ms ease-in;
+  }
+
+  img:hover {
+    transform: scale(1.02);
+    border: 2px solid var(--clr-primary);
+    @include box-shadow;
+    filter: none;
+  }
+}

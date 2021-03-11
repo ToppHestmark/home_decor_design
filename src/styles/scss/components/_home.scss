@@ -36,13 +36,8 @@
   img {
     width: 100%;
     height: auto;
-    transition: transform 400ms ease-in;
   }
-
-  img:hover {
-    transform: scale(1.02);
-    @include box-shadow;
-  }
+  @include image-hover;
 
   .imageContainer,
   .text-box {

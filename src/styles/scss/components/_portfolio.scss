@@ -1,0 +1,53 @@
+@use '../abstracts/' as *;
+
+.portfolio {
+  header {
+    @include flex-col-center;
+    min-height: 40vh;
+    margin-top: 3em;
+    padding: 0 1em;
+
+    p,
+    .border-line {
+      max-width: 800px;
+      text-align: start;
+    }
+
+    p {
+      padding-bottom: 3em;
+    }
+
+    @media screen and (max-width: $screen-md) {
+      margin-top: 7em;
+    }
+  }
+
+  &__gallery {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(3, auto);
+    grid-gap: 1em;
+    padding: 3em;
+
+    .gallery-img-wrapper {
+      @include flex-col-center;
+
+      img {
+        width: 100%;
+        height: auto;
+      }
+      @include image-hover;
+    }
+
+    @media screen and (max-width: $screen-md) {
+      padding: 1em;
+      grid-template-columns: repeat(2, auto);
+      grid-template-rows: repeat(2, auto);
+
+      p {
+        font-size: 0.8rem;
+      }
+    }
+  }
+}
