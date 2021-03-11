@@ -31,3 +31,13 @@
     filter: none;
   }
 }
+
+@mixin card-hover {
+  transition: 350ms ease-in;
+
+  &:hover {
+    transform: scale(1.02);
+    border: 2px solid var(--clr-primary);
+    @include box-shadow;
+  }
+}
