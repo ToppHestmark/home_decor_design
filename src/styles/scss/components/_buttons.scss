@@ -5,11 +5,12 @@
   transition: transform, letter-spacing 400ms ease-in;
 
   a {
-    color: var(--clr-dark-700);
+    color: var(--clr-light);
     padding: 1em 3em;
     text-decoration: none;
     text-transform: uppercase;
-    border: 0.5px solid var(--clr-dark-700);
+    // border: 0.5px solid var(--clr-dark-700);
+    background: var(--clr-secondary);
   }
 
   a:hover {
@@ -19,7 +20,7 @@
 
   a:active {
     background-color: var(--clr-secondary);
-    border: 0.5px solid var(--clr-secondary);
+    // border: 0.5px solid var(--clr-secondary);
     color: var(--clr-light);
   }
 

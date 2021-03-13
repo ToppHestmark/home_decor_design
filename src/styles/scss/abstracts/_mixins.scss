@@ -22,6 +22,7 @@
     -webkit-filter: grayscale(40%) blur(0.4px);
     filter: grayscale(40%) blur(0.4px);
     transition: 350ms ease-in;
+    border: 2px solid transparent;
   }
 
   img:hover {
