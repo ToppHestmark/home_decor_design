@@ -3,9 +3,10 @@
 .footer {
   @include flex-col-center;
 
+  margin-top: auto;
   width: 100%;
   min-height: 30vh;
-  padding: 3em 0.5em;
+  padding: 2em 0.5em;
   text-align: center;
 
   &__logo-container {
