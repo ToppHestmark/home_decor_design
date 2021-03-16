@@ -21,7 +21,7 @@ const createNavbar = () => {
       <li class="nav__item ${portfolioActive}">
         <a href="./portfolio.html" class="nav__link">Portfolio</a>
       </li>
-      <li class="nav__item">
+      <li class="nav__item ${productsActive}">
         <a href="./products.html" class="nav__link">Products</a>
       </li>
       <li class="nav__item">

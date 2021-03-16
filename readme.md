@@ -13,3 +13,4 @@ Task list:
 - [x] Portfolio page with several images.
 - [ ] Contact page ??
 - [ ] Image slider ??
+- [ ] New Logo with a larger text logo

@@ -234,4 +234,23 @@ section {
   }
 }
 
+.products-header__text-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: absolute;
+  width: 100%;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -90%);
+  z-index: 2;
+  margin: 0.5em;
+}
+.products-header__text-box h1,
+.products-header__text-box p {
+  z-index: 2;
+  position: relative;
+}
+
 /*# sourceMappingURL=index.css.map */

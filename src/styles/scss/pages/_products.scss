@@ -1,0 +1,21 @@
+@use '../abstracts/' as *;
+
+.products-header {
+  &__text-box {
+    @include flex-col-center;
+
+    position: absolute;
+    width: 100%;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -90%);
+    z-index: 2;
+    margin: 0.5em;
+
+    h1,
+    p {
+      z-index: 2;
+      position: relative;
+    }
+  }
+}
