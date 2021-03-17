@@ -1,7 +1,7 @@
 @use '../abstracts/' as *;
 
 section.hero,
-.products-header {
+.products__header {
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -14,7 +14,7 @@ section.hero,
   background-position: center bottom;
 }
 
-.products-header {
+.products__header {
   background-image: url("../../../../assets/background/products.jpg");
   min-height: 50vh;
   background-position: center left;

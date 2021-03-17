@@ -257,7 +257,7 @@ input {
 }
 
 section.hero,
-.products-header {
+.products__header {
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -269,12 +269,12 @@ section.hero,
   background-position: center bottom;
 }
 
-.products-header {
+.products__header {
   background-image: url("../../../../assets/background/products.jpg");
   min-height: 50vh;
   background-position: center left;
 }
-.products-header::before {
+.products__header::before {
   content: "";
   background-color: rgba(236, 239, 241, 0.582);
   position: absolute;
@@ -287,19 +287,19 @@ section.hero,
   height: 50vh;
 }
 @media screen and (max-width: 768px) {
-  .products-header {
+  .products__header {
     min-height: 70vh;
   }
-  .products-header::before {
+  .products__header::before {
     height: 70vh;
   }
 }
 
 .footer {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
   margin-top: auto;
   width: 100%;
   min-height: 30vh;

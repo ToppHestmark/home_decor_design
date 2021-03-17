@@ -23,31 +23,12 @@
   }
 
   &__gallery {
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(3, auto);
-    grid-template-rows: repeat(3, auto);
-    grid-gap: 1em;
-    padding: 3em;
+    @include image-grid-container;
 
     .gallery-img-wrapper {
       @include flex-col-center;
-
-      img {
-        width: 100%;
-        height: auto;
-      }
+      @include image-responsive;
       @include image-hover;
-    }
-
-    @media screen and (max-width: $screen-md) {
-      padding: 1em;
-      grid-template-columns: repeat(2, auto);
-      grid-template-rows: repeat(2, auto);
-
-      p {
-        font-size: 0.8rem;
-      }
     }
   }
 }

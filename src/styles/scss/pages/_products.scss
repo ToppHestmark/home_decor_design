@@ -1,6 +1,6 @@
 @use '../abstracts/' as *;
 
-.products-header {
+.products__header {
   &__text-box {
     @include flex-col-center;
 
@@ -16,6 +16,46 @@
     p {
       z-index: 2;
       position: relative;
+    }
+  }
+}
+
+.products {
+  h2 {
+    text-align: center;
+    margin: 0.5em 0 -1em 0em;
+    font-size: 2rem;
+    font-weight: 500;
+
+    @media screen and (max-width: $screen-md) {
+      margin-left: 0.6em;
+      margin-bottom: -0.5em;
+    }
+  }
+}
+
+.products__container {
+  @include image-grid-container;
+  justify-content: center;
+
+  &__image-wrapper {
+    width: 25vw;
+    display: flex;
+    flex-direction: column;
+    @include image-responsive;
+    @include image-hover;
+
+    h4 {
+      font-size: 1.4rem;
+      margin-bottom: -1.3em;
+    }
+
+    @media screen and (max-width: $screen-md) {
+      width: 45vw;
+
+      h4 {
+        font-size: 1.2rem;
+      }
     }
   }
 }

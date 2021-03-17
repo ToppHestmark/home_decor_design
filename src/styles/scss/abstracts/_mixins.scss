@@ -1,8 +1,10 @@
+@use './variables' as *;
+
 @mixin flex-col-center {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
 }
 
 @mixin flex-row {
@@ -17,10 +19,17 @@
   box-shadow: 0px 6px 23px 0px rgba(197, 194, 194, 0.75);
 }
 
+@mixin image-responsive {
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
+
 @mixin image-hover {
   img {
-    -webkit-filter: grayscale(40%) blur(0.4px);
-    filter: grayscale(40%) blur(0.4px);
+    -webkit-filter: grayscale(30%) blur(0.4px);
+    filter: grayscale(30%) blur(0.4px);
     transition: 350ms ease-in;
     border: 2px solid transparent;
   }
@@ -40,5 +49,24 @@
     transform: scale(1.02);
     border: 2px solid var(--clr-primary);
     @include box-shadow;
+  }
+}
+
+@mixin image-grid-container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-template-rows: repeat(3, auto);
+  grid-gap: 1em;
+  padding: 3em;
+
+  @media screen and (max-width: $screen-md) {
+    padding: 1em;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(2, auto);
+
+    p {
+      font-size: 0.8rem;
+    }
   }
 }
