@@ -3,19 +3,19 @@ export const products = [
     id: 1,
     name: "Fruit basket",
     price: 39,
-    image: "./assets/products/product-1.jpg",
+    image: "./assets/products/product-1.png",
   },
   {
     id: 2,
     name: "Stick cup",
     price: 14,
-    image: "./assets/products/product-2.jpg",
+    image: "./assets/products/product-2.png",
   },
   {
     id: 3,
     name: "Shell",
     price: 7,
-    image: "./assets/products/product-3.jpg",
+    image: "./assets/products/product-3.png",
   },
 ];
 

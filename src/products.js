@@ -11,7 +11,7 @@ products.map((product) => {
 
   productsContainer.innerHTML += `
     <div class="products__container__image-wrapper">
-      <img src=${image} alt=${name} />
+      <img class="items" src=${image} alt=${name} />
       <h4> ${name} </h4>
       <p>$ ${price} </p>
     </div>

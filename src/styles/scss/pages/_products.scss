@@ -38,6 +38,10 @@
   @include image-grid-container;
   justify-content: center;
 
+  &__image-wrapper .items {
+    background-color: var(--clr-light-400);
+  }
+
   &__image-wrapper {
     width: 25vw;
     display: flex;
