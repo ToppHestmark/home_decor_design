@@ -11,9 +11,17 @@ products.map((product) => {
 
   productsContainer.innerHTML += `
     <div class="products__container__image-wrapper">
+      <img class="favourite" src="../assets/icons/love.png" alt="Favourite" />
       <img class="items" src=${image} alt=${name} />
       <h4> ${name} </h4>
-      <p>$ ${price} </p>
+      <div class="price-tag">
+        <div>
+        <img src="../assets/icons/price.png" alt="Price tag" /> 
+        <small>
+          ${price}
+        </small>
+        </div>
+      </div>
     </div>
   `;
 });
@@ -26,9 +34,17 @@ paints.map((product) => {
 
   paintContainer.innerHTML += `
     <div class="products__container__image-wrapper">
+    <img class="favourite" src="../assets/icons/love.png" alt="Favourite" />
       <img src=${image} alt=${name} />
       <h4> ${name} </h4>
-      <p>$ ${price} </p>
+      <div class="price-tag">
+        <div>
+        <img src="../assets/icons/price.png" alt="Price tag" /> 
+        <small>
+          ${price}
+        </small>
+        </div>
+      </div>
     </div>
   `;
 });

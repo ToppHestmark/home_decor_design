@@ -794,4 +794,46 @@ section {
   }
 }
 
+.price-tag {
+  margin: 1.2em 0;
+  display: grid;
+  color: var(--clr-dark-700);
+}
+.price-tag img {
+  margin-right: 0.5em;
+  width: 1.5rem;
+  height: auto;
+  transition: none;
+  border: 0;
+  filter: none;
+}
+.price-tag img:hover {
+  transform: scale(1);
+  box-shadow: none;
+  border: 0;
+}
+.price-tag small {
+  position: absolute;
+  font-size: 1.1rem;
+}
+
+.products__container__image-wrapper .favourite {
+  position: absolute;
+  width: 2em;
+  align-self: flex-end;
+  margin: 0.5em 0.5em 0 0;
+  z-index: 3;
+  opacity: 0.4;
+  transition: none;
+  border: 0;
+  cursor: pointer;
+  filter: none;
+}
+.products__container__image-wrapper .favourite:hover {
+  opacity: 1;
+  transform: scale(1);
+  box-shadow: none;
+  border: 0;
+}
+
 /*# sourceMappingURL=main.css.map */
