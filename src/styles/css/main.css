@@ -816,6 +816,14 @@ section {
   position: absolute;
   font-size: 1.1rem;
 }
+@media screen and (min-width: 1400px) {
+  .price-tag img {
+    width: 2.5rem;
+  }
+  .price-tag small {
+    font-size: 1.8rem;
+  }
+}
 
 .products__container__image-wrapper .favourite {
   position: absolute;

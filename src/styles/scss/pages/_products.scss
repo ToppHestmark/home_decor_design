@@ -88,6 +88,16 @@
     position: absolute;
     font-size: 1.1rem;
   }
+
+  @media screen and (min-width: 1400px) {
+    img {
+      width: 2.5rem;
+    }
+
+    small {
+      font-size: 1.8rem;
+    }
+  }
 }
 
 .products__container__image-wrapper .favourite {
