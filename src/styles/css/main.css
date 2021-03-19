@@ -435,10 +435,11 @@ section.hero,
   color: var(--clr-dark-700);
   padding: 0.7em 3em;
   width: 100%;
+  font-size: 0.9rem;
 }
 .button-buy:hover {
   background-color: var(--clr-dark-700);
-  color: var(--clr-light);
+  color: var(--clr-primary);
 }
 .button-buy:active {
   background-color: var(--clr-secondary);
