@@ -427,6 +427,23 @@ section.hero,
   letter-spacing: 1px;
 }
 
+.button-buy {
+  cursor: pointer;
+  align-self: center;
+  border: 0;
+  background-color: var(--clr-primary);
+  color: var(--clr-dark-700);
+  padding: 0.7em 3em;
+  width: 100%;
+}
+.button-buy:hover {
+  background-color: var(--clr-dark-700);
+  color: var(--clr-light);
+}
+.button-buy:active {
+  background-color: var(--clr-secondary);
+}
+
 .scrollToTopButton {
   display: none;
   position: fixed;

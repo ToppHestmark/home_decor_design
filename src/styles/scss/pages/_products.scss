@@ -50,8 +50,8 @@
     @include image-hover;
 
     h4 {
-      font-size: 1.4rem;
-      margin-bottom: -1.3em;
+      font-size: 1.2rem;
+      padding: 0;
     }
 
     @media screen and (max-width: $screen-md) {
@@ -64,14 +64,17 @@
   }
 }
 
-.price-tag {
-  margin: 1.2em 0;
-  display: grid;
+.tag {
+  width: 100%;
+  margin: 1em 0 0 0;
+  display: flex;
+  justify-content: space-between;
   color: var(--clr-dark-700);
 
   img {
-    margin-right: 0.5em;
-    width: 1.5rem;
+    margin-right: 0.2em;
+    margin-bottom: -0.07em;
+    width: 0.4em;
     height: auto;
     transition: none;
     border: 0;
@@ -85,17 +88,17 @@
   }
 
   small {
-    position: absolute;
-    font-size: 1.1rem;
+    font-size: 1rem;
+    font-weight: 300;
   }
 
   @media screen and (min-width: 1400px) {
     img {
-      width: 2.5rem;
+      width: 0.5em;
     }
 
     small {
-      font-size: 1.8rem;
+      font-size: 1.4rem;
     }
   }
 }
@@ -117,5 +120,9 @@
     transform: scale(1);
     box-shadow: none;
     border: 0;
+  }
+
+  @media screen and (max-width: $screen-md) {
+    width: 1.4em;
   }
 }
