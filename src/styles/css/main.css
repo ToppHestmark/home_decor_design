@@ -1,4 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
 :root {
   --clr-primary: rgb(231, 196, 81);
   --clr-secondary: rgba(212, 75, 212, 0.931);
@@ -8,9 +7,22 @@
   --clr-light-400: rgba(240, 241, 241, 0.876);
 }
 
+@font-face {
+  font-family: oranienbaum;
+  src: url("../../../../assets/fonts/Oranienbaum/Oranienbaum-Regular.ttf");
+}
+@font-face {
+  font-family: dancing-script;
+  src: url("../../../../assets/fonts/Dancing_Script/DancingScript-VariableFont_wght.ttf");
+  font-weight: 500;
+}
+@font-face {
+  font-family: Lato;
+  src: url("../../../../assets/fonts/Lato/Lato-Regular.ttf");
+}
 body {
-  font-family: "Lato", sans-serif;
-  font-size: 1.125em;
+  font-family: Lato, sans-serif;
+  font-size: 1.125rem;
   line-height: 1.6;
   color: var(--clr-dark);
 }
@@ -599,13 +611,18 @@ section {
   text-align: center;
   padding: 2em 20vw;
 }
+.home__fore-text .font-italic {
+  font-family: dancing-script;
+}
+.home__fore-text h4 {
+  font-family: oranienbaum;
+  letter-spacing: 1px;
+  margin-bottom: 3em;
+}
 @media screen and (max-width: 768px) {
   .home__fore-text {
     padding: 2em 5vw;
   }
-}
-.home__fore-text h4 {
-  margin-bottom: 3em;
 }
 
 .home__lowerSection {
