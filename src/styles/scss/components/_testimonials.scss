@@ -16,7 +16,7 @@
     @include card-hover;
 
     p {
-      font-family: primary-thin;
+      font-family: primary-light;
       color: var(--clr-dark);
       font-style: italic;
     }
@@ -50,6 +50,7 @@
   .user-title {
     text-align: end;
     font-size: small;
+    font-family: primary-thin;
   }
 
   @media screen and (max-width: $screen-lg) {
