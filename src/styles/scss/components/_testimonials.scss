@@ -16,14 +16,16 @@
     @include card-hover;
 
     p {
+      font-family: primary-thin;
+      color: var(--clr-dark);
       font-style: italic;
     }
 
     .icon {
       position: absolute;
       color: var(--clr-secondary);
-      margin-top: -1.2em;
-      font-size: 4rem;
+      margin-top: -1.3em;
+      font-size: 3rem;
       z-index: 2;
     }
   }
@@ -38,9 +40,10 @@
     font-weight: 300;
 
     .icon-user {
-      font-size: 2rem;
-      color: var(--clr-dark);
+      font-size: 1.2rem;
+      color: var(--clr-dark-700);
       margin-right: 0.2em;
+      opacity: 0.85;
     }
   }
 

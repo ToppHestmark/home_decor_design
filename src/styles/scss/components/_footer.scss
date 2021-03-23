@@ -8,6 +8,7 @@
   min-height: 30vh;
   padding: 2em 0.5em;
   text-align: center;
+  font-size: 0.85rem;
 
   &__logo-container {
     margin: 1em 0;
@@ -17,16 +18,22 @@
     }
   }
 
+  a[type="email"]:is(:hover, :focus) {
+    color: var(--clr-secondary);
+    text-decoration: underline;
+  }
+
   &__link-container {
-    margin: 2em 0;
+    margin: 1em 0;
 
     a {
-      text-decoration: none;
-      margin: 1.5em;
+      font-size: 1.4rem;
+      margin: 1em;
       line-height: 2;
       color: var(--clr-dark-700);
 
-      &:hover {
+      &:hover,
+      &:focus {
         color: var(--clr-primary);
       }
 

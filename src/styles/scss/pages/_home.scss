@@ -5,6 +5,11 @@
     @include flex-col-center;
     min-height: 40vh;
 
+    p {
+      font-family: primary-light;
+      margin-top: -1.4em;
+    }
+
     @media screen and (max-width: $screen-md) {
       min-height: 70vh;
     }
@@ -19,11 +24,12 @@
   padding: 2em 20vw;
 
   .font-italic {
-    font-family: dancing-script;
+    font-family: tertiary;
+    letter-spacing: 0.5px;
   }
 
   h4 {
-    font-family: oranienbaum;
+    font-family: secondary;
     letter-spacing: 1px;
     margin-bottom: 3em;
   }

@@ -1,3 +1,4 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css");
 :root {
   --clr-primary: rgb(231, 196, 81);
   --clr-secondary: rgba(212, 75, 212, 0.931);
@@ -8,27 +9,46 @@
 }
 
 @font-face {
-  font-family: oranienbaum;
+  font-family: primary;
+  src: url("../../../../assets/fonts/Lato/Lato-Regular.ttf");
+}
+@font-face {
+  font-family: primary-light;
+  src: url("../../../../assets/fonts/Lato/Lato-Light.ttf");
+}
+@font-face {
+  font-family: primary-thin;
+  src: url("../../../../assets/fonts/Lato/Lato-Thin.ttf");
+}
+@font-face {
+  font-family: secondary;
   src: url("../../../../assets/fonts/Oranienbaum/Oranienbaum-Regular.ttf");
 }
 @font-face {
-  font-family: dancing-script;
+  font-family: tertiary;
   src: url("../../../../assets/fonts/Dancing_Script/DancingScript-VariableFont_wght.ttf");
   font-weight: 500;
 }
-@font-face {
-  font-family: Lato;
-  src: url("../../../../assets/fonts/Lato/Lato-Regular.ttf");
-}
 body {
-  font-family: Lato, sans-serif;
+  font-family: primary, sans-serif;
   font-size: 1.125rem;
+  word-spacing: 0.125rem;
   line-height: 1.6;
   color: var(--clr-dark);
 }
 
+:is(h1, h2) {
+  font-family: secondary;
+}
+
 h1 {
+  font-size: 3.4rem;
+  font-weight: 1000;
+}
+
+h2 {
   font-size: 3rem;
+  padding: 0.3em 0;
 }
 
 header {
@@ -42,20 +62,17 @@ h4 {
   padding: 1em 0;
 }
 
-h2 {
-  font-size: 3rem;
-  padding: 0.3em 0;
-}
-
 .font-italic {
   font-style: italic;
   font-weight: 300;
 }
 
 p {
+  font-family: primary-light;
+  letter-spacing: 0.3px;
   padding: 0.5em 0;
   line-height: 1.8;
-  font-weight: 300;
+  font-weight: 100;
   color: var(--clr-dark-700);
   opacity: 0.85;
 }
@@ -69,6 +86,11 @@ input {
   font-size: 1.4rem;
   font-weight: 300;
   color: var(--clr-dark-700);
+}
+
+a {
+  text-decoration: none;
+  color: var(--clr-dark);
 }
 
 .nav {
@@ -94,7 +116,7 @@ input {
   margin-bottom: 3em;
 }
 .nav__item.active a {
-  color: var(--clr-primary);
+  color: var(--clr-secondary);
   font-size: 1.4rem;
 }
 .nav__link {
@@ -104,7 +126,7 @@ input {
 .nav__link:hover {
   color: var(--clr-primary);
 }
-.nav__link:active {
+.nav__link:is(:active, :focus) {
   color: var(--clr-secondary);
 }
 .nav__toggle {
@@ -318,6 +340,7 @@ section.hero,
   min-height: 30vh;
   padding: 2em 0.5em;
   text-align: center;
+  font-size: 0.85rem;
 }
 .footer__logo-container {
   margin: 1em 0;
@@ -325,16 +348,20 @@ section.hero,
 .footer__logo-container img {
   width: 7rem;
 }
+.footer a[type=email]:is(:hover, :focus) {
+  color: var(--clr-secondary);
+  text-decoration: underline;
+}
 .footer__link-container {
-  margin: 2em 0;
+  margin: 1em 0;
 }
 .footer__link-container a {
-  text-decoration: none;
-  margin: 1.5em;
+  font-size: 1.4rem;
+  margin: 1em;
   line-height: 2;
   color: var(--clr-dark-700);
 }
-.footer__link-container a:hover {
+.footer__link-container a:hover, .footer__link-container a:focus {
   color: var(--clr-primary);
 }
 .footer__link-container a:active {
@@ -419,8 +446,10 @@ section.hero,
   text-decoration: none;
   text-transform: uppercase;
   background: var(--clr-secondary);
+  font-size: 0.9rem;
 }
-.button-action a:hover {
+.button-action a:hover,
+.button-action a:focus {
   background-color: var(--clr-dark-700);
   color: var(--clr-primary);
 }
@@ -435,7 +464,7 @@ section.hero,
 }
 
 .button-action:hover {
-  transform: scalex(1.02);
+  transform: scalex(1.01);
   letter-spacing: 1px;
 }
 
@@ -447,14 +476,17 @@ section.hero,
   color: var(--clr-dark-700);
   padding: 0.7em 3em;
   width: 100%;
-  font-size: 0.9rem;
+  font-size: 1rem;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
 }
 .button-buy:hover {
   background-color: var(--clr-dark-700);
   color: var(--clr-primary);
 }
-.button-buy:active {
+.button-buy:active, .button-buy:focus {
   background-color: var(--clr-secondary);
+  color: var(--clr-light);
 }
 
 .scrollToTopButton {
@@ -516,13 +548,15 @@ section.hero,
   box-shadow: 0px 6px 23px 0px rgba(197, 194, 194, 0.75);
 }
 .testimonials__card p {
+  font-family: primary-thin;
+  color: var(--clr-dark);
   font-style: italic;
 }
 .testimonials__card .icon {
   position: absolute;
   color: var(--clr-secondary);
-  margin-top: -1.2em;
-  font-size: 4rem;
+  margin-top: -1.3em;
+  font-size: 3rem;
   z-index: 2;
 }
 .testimonials__user-container {
@@ -535,9 +569,10 @@ section.hero,
   font-weight: 300;
 }
 .testimonials__user-container .icon-user {
-  font-size: 2rem;
-  color: var(--clr-dark);
+  font-size: 1.2rem;
+  color: var(--clr-dark-700);
   margin-right: 0.2em;
+  opacity: 0.85;
 }
 .testimonials .user-title {
   text-align: end;

@@ -4,12 +4,26 @@ const createFooter = () => {
   <div class="footer__logo-container">
     <img src="./assets/logo.png" alt="Home Decor" />
   </div>
-  <p>For more information, email: jane@homedecor.com</p>
+  <p>For more information, mail to: 
+    <a
+      type="email"
+      href="mailto:johndoe@homedecor.com">
+      Jon Doe
+    </a>
+  </p>
   <div class="footer__link-container">
-    <a href="#">INSTAGRAM</a>
-    <a href="#">PINTEREST</a>
-    <a href="#">FACEBOOK</a>
-    <a href="#">TWITTER</a>
+    <a href="#">
+      <i class="fab fa-instagram-square"></i>
+    </a>
+    <a href="#">
+      <i class="fab fa-pinterest"></i>
+    </a>
+    <a href="#">
+      <i class="fab fa-facebook"></i>
+    </a>
+    <a href="#">
+      <i class="fab fa-twitter"></i>
+    </a>
   </div>
   `;
 };
