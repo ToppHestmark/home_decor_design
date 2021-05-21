@@ -182,7 +182,6 @@ section {
   border: 2px solid transparent;
 }
 .home__lowerSection img:hover {
-  transform: scale(1.02);
   border: 2px solid var(--clr-primary);
   -webkit-box-shadow: 0px 6px 23px 0px rgba(197, 194, 194, 0.75);
   -moz-box-shadow: 0px 6px 23px 0px rgba(197, 194, 194, 0.75);
@@ -272,7 +271,6 @@ section {
   border: 2px solid transparent;
 }
 .portfolio__gallery .gallery-img-wrapper img:hover {
-  transform: scale(1.02);
   border: 2px solid var(--clr-primary);
   -webkit-box-shadow: 0px 6px 23px 0px rgba(197, 194, 194, 0.75);
   -moz-box-shadow: 0px 6px 23px 0px rgba(197, 194, 194, 0.75);
@@ -350,7 +348,6 @@ section {
   border: 2px solid transparent;
 }
 .products__container__image-wrapper img:hover {
-  transform: scale(1.02);
   border: 2px solid var(--clr-primary);
   -webkit-box-shadow: 0px 6px 23px 0px rgba(197, 194, 194, 0.75);
   -moz-box-shadow: 0px 6px 23px 0px rgba(197, 194, 194, 0.75);
