@@ -24,9 +24,6 @@ const createNavbar = () => {
       <li class="nav__item ${productsActive}">
         <a href="./products.html" class="nav__link">Products</a>
       </li>
-      <li class="nav__item">
-        <a href="#" class="nav__link">Contact</a>
-      </li>
     </ul>
   `;
 
